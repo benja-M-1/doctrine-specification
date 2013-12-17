@@ -1,0 +1,16 @@
+{
+    "name": "benjam1/doctrine-specification",
+    "require": {
+        "doctrine/orm": "2.5.*@dev"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "2.0.*@dev"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": { "Specification": "src" }
+    },
+    "minimum-stability": "dev"
+}
