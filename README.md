@@ -10,9 +10,25 @@ solution..." And I'm not the only one according to the comments! Then I tried th
 brings flexibility into your repository. Now you can use this library as a starting point for your project to use the
 specification pattern.
 
+Usage
+=====
+
+```php
+
+$spec = new AndX(
+    new MySpecA(),
+    new MySpecB()
+);
+
+$matcher = new Matcher();
+
+$query = $matcher->match($em->getRepository('Foo\Bar'), 'r', $spec);
+
+$results = $query->getResults();
+```
 
 TODO
 ====
 
-[] Specification generator
-[] Dynamic specification creation
+[ ] Specification generator
+[ ] Dynamic specification creation
